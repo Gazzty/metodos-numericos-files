@@ -99,12 +99,12 @@ def f3(x):
 
 print(f"Bisección de f(x) = x^2 + x - 12: {biseccion_con_pasos(f3, 0, 5, 10)}")
 
-# 7. Aplicar el método de bisección para aproximar un x que cumpla cos(x) = -1, con error menor que epsilon = 1/10. Notar que esto sirve para encontrar aproximaciones de pi.
+# 7. Aplicar el método de bisección para aproximar un x que cumpla cos(x) = - 1/2, con error menor que epsilon = 1/10. Notar que esto sirve para encontrar aproximaciones de pi.
 
 def f4(x):
-    return (math.cos(x) + 1)
+    return (math.cos(x) + 1/2)
 
-print(f"Bisección de f(x) = cos(x) + 1 con epsilon 1/10: {biseccion_con_epsilon(f4, 0, 8, 0.1)}")
+print(f"Bisección de f(x) = cos(x) + 1/2 con epsilon 1/10: {biseccion_con_epsilon(f4, 0, 8, 0.1)}")
 
 # 8. Modificar la implementación del método de bisección para que:
 # a) haga la menor cantidad posible de evaluaciones de la f en cada iteración
